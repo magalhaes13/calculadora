@@ -157,6 +157,7 @@ namespace calculadora
             // 
             // button12
             // 
+            this.button12.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button12.Location = new System.Drawing.Point(210, 56);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(41, 35);
@@ -227,6 +228,7 @@ namespace calculadora
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Location = new System.Drawing.Point(22, 138);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 35);
@@ -283,8 +285,10 @@ namespace calculadora
             // 
             // Form1
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(277, 228);
@@ -314,6 +318,7 @@ namespace calculadora
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Calculadora";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form1_Load);
