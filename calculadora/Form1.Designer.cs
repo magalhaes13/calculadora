@@ -151,7 +151,7 @@ namespace calculadora
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(41, 35);
             this.button11.TabIndex = 10;
-            this.button11.Text = ".";
+            this.button11.Text = ",";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -239,9 +239,12 @@ namespace calculadora
             // 
             // display
             // 
+            this.display.Enabled = false;
+            this.display.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Millimeter, ((byte)(0)));
             this.display.Location = new System.Drawing.Point(22, 12);
             this.display.Multiline = true;
             this.display.Name = "display";
+            this.display.ReadOnly = true;
             this.display.Size = new System.Drawing.Size(232, 35);
             this.display.TabIndex = 20;
             this.display.TextChanged += new System.EventHandler(this.BoxTela_TextChanged);

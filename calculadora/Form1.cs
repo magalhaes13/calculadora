@@ -86,7 +86,7 @@ namespace calculadora
             }
             else
             {
-                acumula += double.Parse(display.Text);
+                acumula = double.Parse(display.Text);
                 display.Text = "";
                 operacao = "+";
             }
@@ -138,6 +138,7 @@ namespace calculadora
         {
             display.Text = "";
             operacao = "";
+            acumula = 0;   
         }
 
         private void button18_Click(object sender, EventArgs e) // apagar td
@@ -151,7 +152,7 @@ namespace calculadora
 
         private void button11_Click(object sender, EventArgs e) // ponto
         {
-            display.Text += ".";
+            display.Text += ",";
         }
 
         private void BoxTela_TextChanged(object sender, EventArgs e)
@@ -163,8 +164,11 @@ namespace calculadora
         {
             if (operacao == "+")
             {
-                acumula += double.Parse(display.Text);
+                acumula = acumula + double.Parse(display.Text);
                 display.Text = acumula.ToString();
+
+                acumula = 0;
+                acumula = Convert.ToDouble(display.Text);
             }
             else if (operacao == "-")
             {
