@@ -251,7 +251,7 @@ namespace calculadora
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
+            this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBox1.Location = new System.Drawing.Point(257, 12);
@@ -262,7 +262,7 @@ namespace calculadora
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
+            this.textBox2.BackColor = System.Drawing.SystemColors.WindowText;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox2.Location = new System.Drawing.Point(3, 12);
             this.textBox2.Multiline = true;
@@ -292,7 +292,8 @@ namespace calculadora
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(277, 228);
             this.Controls.Add(this.label2);
@@ -319,7 +320,6 @@ namespace calculadora
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Calculadora";
